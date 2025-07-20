@@ -8,6 +8,14 @@ Designed with system architecture principles and built using **Test-Driven Devel
 
 ---
 
+## ⛽ Project Status
+
+[![Frontend CI](https://github.com/darshna09/personal-expense-tracker/actions/workflows/frontend.yml/badge.svg)](https://github.com/<your-username>/<repo-name>/actions/workflows/frontend.yml)
+
+[![Backend CI](https://github.com/darshna09/personal-expense-tracker/actions/workflows/backend.yml/badge.svg)](https://github.com/<your-username>/<repo-name>/actions/workflows/backend.yml)
+
+---
+
 ## 🚀 Tech Stack
 
 | Layer       | Primary Stack                     |
