@@ -1,4 +1,3 @@
-// eslint.config.js
 import js from '@eslint/js';
 import prettier from 'eslint-config-prettier';
 import tseslint from '@typescript-eslint/eslint-plugin';
@@ -20,8 +19,8 @@ export default [
       '@typescript-eslint': tseslint,
     },
     rules: {
-      // Example: enable a few recommended TS rules
       '@typescript-eslint/no-unused-vars': 'warn',
+      '@typescript-eslint/no-empty-function': 'warn',
     },
   },
   prettier,
