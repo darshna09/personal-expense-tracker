@@ -1,10 +1,14 @@
 # Node
 node_modules/
-.env
 dist/
 build/
 dist-ssr
 *.local
+
+# Environment variables
+.env
+.env.test
+.env.production
 
 # Logs
 logs
