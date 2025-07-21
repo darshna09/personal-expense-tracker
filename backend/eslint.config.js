@@ -1,7 +1,9 @@
 import js from '@eslint/js';
+import globals from 'globals';
 import prettier from 'eslint-config-prettier';
-import tseslint from '@typescript-eslint/eslint-plugin';
+import { globalIgnores } from 'eslint/config';
 import tsparser from '@typescript-eslint/parser';
+import tseslint from '@typescript-eslint/eslint-plugin';
 
 /** @type {import("eslint").FlatConfig[]} */
 export default [
@@ -14,6 +16,9 @@ export default [
         ecmaVersion: 'latest',
         sourceType: 'module',
       },
+      globals: {
+        ...globals.node,
+      },
     },
     plugins: {
       '@typescript-eslint': tseslint,
@@ -23,5 +28,6 @@ export default [
       '@typescript-eslint/no-empty-function': 'warn',
     },
   },
+  globalIgnores(['dist', 'coverage', 'node_modules']),
   prettier,
 ];
